@@ -1,0 +1,38 @@
+{
+  "description": "Последовательная RLC-цепь на переменном токе. Амплитуда 311 В (220 RMS), f = 50 Гц",
+  "dt": 50e-6,
+  "nodes": 4,
+  "elements": [
+    {
+      "type": "E1",
+      "voltage": 311.13,
+      "frequency": 50,
+      "phase_deg": 0,
+      "r_internal": 1e-10,
+      "branch": 0,
+      "node_begin": 0,
+      "node_end": 1
+    },
+    {
+      "type": "R1",
+      "resistance": 50,
+      "branch": 1,
+      "node_begin": 1,
+      "node_end": 2
+    },
+    {
+      "type": "L1",
+      "inductance": 0.2,
+      "branch": 2,
+      "node_begin": 2,
+      "node_end": 3
+    },
+    {
+      "type": "C1",
+      "capacitance": 100e-6,
+      "branch": 3,
+      "node_begin": 3,
+      "node_end": 0
+    }
+  ]
+}

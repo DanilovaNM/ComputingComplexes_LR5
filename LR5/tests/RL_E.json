@@ -1,0 +1,31 @@
+{
+  "description": "Последовательная RL-цепь. Постоянный источник 10 В, R = 10 Ом, L = 0.1 Гн",
+  "dt": 50e-6,
+  "nodes": 3,
+  "elements": [
+    {
+      "type": "E1",
+      "voltage": 10,
+      "frequency": 0,
+      "phase_deg": 0,
+      "r_internal": 1e-10,
+      "branch": 0,
+      "node_begin": 0,
+      "node_end": 1
+    },
+    {
+      "type": "R1",
+      "resistance": 10,
+      "branch": 1,
+      "node_begin": 1,
+      "node_end": 2
+    },
+    {
+      "type": "L1",
+      "inductance": 0.1,
+      "branch": 2,
+      "node_begin": 2,
+      "node_end": 0
+    }
+  ]
+}

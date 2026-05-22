@@ -1,0 +1,52 @@
+{
+  "description": "Разветвлённая цепь постоянного тока. Мостовая схема",
+  "dt": 50e-6,
+  "nodes": 4,
+  "elements": [
+    {
+      "type": "E1",
+      "voltage": 12,
+      "frequency": 0,
+      "phase_deg": 0,
+      "r_internal": 0.1,
+      "branch": 0,
+      "node_begin": 0,
+      "node_end": 1
+    },
+    {
+      "type": "R1",
+      "resistance": 100,
+      "branch": 1,
+      "node_begin": 1,
+      "node_end": 2
+    },
+    {
+      "type": "R2",
+      "resistance": 200,
+      "branch": 2,
+      "node_begin": 2,
+      "node_end": 0
+    },
+    {
+      "type": "R3",
+      "resistance": 150,
+      "branch": 3,
+      "node_begin": 1,
+      "node_end": 3
+    },
+    {
+      "type": "R4",
+      "resistance": 300,
+      "branch": 4,
+      "node_begin": 3,
+      "node_end": 0
+    },
+    {
+      "type": "R5",
+      "resistance": 50,
+      "branch": 5,
+      "node_begin": 2,
+      "node_end": 3
+    }
+  ]
+}
